@@ -1,0 +1,90 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #34495e;
+    background-color: #ecf0f1;
+}
+
+h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: .1vw;
+}
+
+h2 {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: .1vw;
+    font-style: italic;
+}
+
+table {
+    margin: 2vw auto 0;
+}
+
+table td {
+    border: 1px #34495e solid;
+    width: 5vw;
+    height: 5vw;
+    
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    color: #34495e;
+}
+
+button {
+    width: 10vw;
+    cursor: pointer;
+    padding: .5vw 0;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+#maze {
+    display: flex;
+}
+
+#maze > div {
+    flex-basis: 49%;
+}
+
+@media screen and (min-width: 1600px){
+    table td {
+        width: 3vw;
+        height: 3vw;
+        font-size: .8vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    table td {
+        width: 8vw;
+        height: 8vw;
+        font-size: 2.3vw;
+    }
+
+    button {
+        width: 20vw;
+        font-size: 3vw;
+        padding: 1vw 2vw;   
+    }
+
+    #maze {
+        flex-direction: column;
+    }
+
+    #maze > div {
+        flex-basis: 100%;
+    }
+}

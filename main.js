@@ -275,4 +275,3 @@ function solveMaze() {
     }
     document.getElementById("solveBtn").disabled = true;
 }
-
